@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="25dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal" >
+  <!-- 记事本底部导航栏 -->  
+    <Button
+        android:id="@+id/myn"
+        style="@style/EmbedButtonTheme"
+        android:text="我的记事"
+        android:layout_margin="2dip"
+        android:background="@drawable/shape" />
+    
+    <Button
+        android:id="@+id/addn"
+        style="@style/EmbedButtonTheme"
+        android:text="添加记事"
+        android:layout_margin="2dip"
+        android:background="@drawable/shape" /> 
+
+    <Button
+        android:id="@+id/managern"
+        style="@style/EmbedButtonTheme"
+        android:text="管理记事"
+        android:layout_margin="2dip"
+        android:background="@drawable/shape" />
+
+</LinearLayout>

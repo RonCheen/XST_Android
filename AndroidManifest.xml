@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.jereh.slidingdemo"
+	android:versionCode="1"
+	android:versionName="1.0">
+
+	<uses-sdk
+		android:minSdkVersion="11"
+		android:targetSdkVersion="17" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE">
+	</uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE">
+	</uses-permission>
+	<uses-permission android:name="android.permission.INTERNET">
+	</uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+	</uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE">
+	</uses-permission>
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW">
+	</uses-permission>
+	<uses-permission android:name="android.permission.INTERNET" />
+	
+        
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/signal"
+		android:label="@string/app_name"
+		android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		<activity
+			android:name="com.hhu.xst.main.FlashActivity"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="com.hhu.xst.video.VideoListActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="com.hhu.xst.main.MainActivity">
+		</activity>
+		<activity
+			android:name="com.hhu.xst.function.LoginActivity"
+			android:label="@string/title_activity_login">
+		</activity>
+		<activity
+			android:name="com.hhu.xst.function.RegisterActivity"
+			android:label="@string/title_activity_register">
+		</activity>
+		<activity
+			android:name="com.hhu.xst.video.FullVideoActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.hhu.xst.function.AboutXSTActivity"
+			android:label="@string/title_activity_about_xst">
+		</activity>
+		<activity android:name="com.hhu.xst.function.MyNoteActivity">
+		</activity>
+		<activity android:name="com.hhu.xst.notetool.AddNoteActivity">
+		</activity>
+		<activity android:name="com.hhu.xst.notetool.ManagerNoteActivity">
+		</activity>
+		<activity android:name="com.hhu.xst.notetool.DetailNoteActivity">
+		</activity>
+		<activity
+			android:name="com.hhu.xst.lesson.ChineseActivity"
+			android:label="@string/title_activity_chinese">
+		</activity>
+		<activity
+			android:name="com.hhu.xst.function.SearchActivity"
+			android:label="@string/title_activity_search">
+		</activity>
+		<activity
+			android:name="com.hhu.xst.function.NewsActivity"
+			android:label="@string/title_activity_news">
+		</activity>
+		<activity android:name="com.hhu.xst.function.SearchPlayerActivity">
+		</activity>
+
+	</application>
+
+</manifest>

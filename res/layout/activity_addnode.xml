@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent" >
+<!-- 新建记事 -->
+    <TextView
+        android:id="@+id/addtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="@string/addtitle"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title"
+        android:textSize="20sp"
+        android:gravity="top|left"
+        android:layout_below="@id/addtitle"
+        android:layout_marginLeft="10dp" />
+    
+    <EditText
+	    android:id="@+id/content"
+	    android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="10dp"
+        android:hint="@string/content"/>
+    <LinearLayout
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button 
+        android:id="@+id/add"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="180dp"
+        android:gravity="center"
+        android:background="@drawable/shape1"
+        android:text="添加"/>
+    
+    <Button 
+        android:id="@+id/cancle"
+        android:layout_width="60dp"
+        android:layout_toRightOf="@id/add"  
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape1"
+       
+        android:text="返回"/>
+        
+    </LinearLayout>
+    
+    
+    <include
+        android:id="@+id/footer"
+        layout="@layout/bottomer" />
+
+</RelativeLayout>

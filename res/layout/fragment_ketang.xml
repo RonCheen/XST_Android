@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center|top"
+	android:background="@drawable/back"
+	android:orientation="vertical">
+	<ScrollView
+		android:id="@+id/scroll"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+			    android:id="@+id/lesson1"
+				android:layout_width="fill_parent"
+				android:background="@drawable/education"
+				android:layout_height="240sp"
+				android:gravity="center"
+				android:text="教研"
+				android:textSize="30sp" />
+			<TextView
+			    android:id="@+id/lesson2"
+				android:layout_width="fill_parent"
+				android:background="@drawable/manage"
+				android:layout_height="240sp"
+				android:text="管理"
+				android:textSize="30sp" />
+
+			<TextView
+			    android:id="@+id/lesson3"
+				android:layout_width="fill_parent"
+				android:background="@drawable/foreign"
+				android:layout_height="240sp"
+				android:text="海外"
+				android:textSize="30sp" />
+
+			<TextView
+			    android:id="@+id/lesson4"
+				android:layout_width="fill_parent"
+				android:background="@drawable/comprehensive"
+				android:layout_height="180sp"
+				android:text="综合"
+				android:textSize="30sp" />
+			
+		</LinearLayout>
+	</ScrollView>
+	<ListView
+		android:id="@id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

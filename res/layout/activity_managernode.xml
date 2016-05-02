@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent" >
+<!-- 管理记事页面 -->
+    <RelativeLayout
+        android:id="@+id/lltitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView 
+            android:id="@+id/showtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            android:text="@string/showtime"/>
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape1"
+            android:text="@string/btndelete" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/lltitle"
+        android:layout_marginTop="3dp"
+        android:background="#EEB422" />
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vone"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="@string/show"
+        android:textColor="#00cc00"
+        android:textSize="22sp" />
+
+    <ListView
+        android:id="@+id/nolist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vone"
+        android:layout_marginBottom="60dp" />
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/bottomer" />
+
+</RelativeLayout>
